@@ -1,5 +1,6 @@
-const express = require('express')
-const cors = require('cors')
+import cors from 'cors'
+import express from 'express'
+import { messengerRouter } from './features/messenger/routes/index.js'
 
 const port = process.env.PORT || 8000
 
@@ -9,7 +10,7 @@ app.use(cors())
 
 app.use(express.json())
 
-app.use('/api/v1/messenger', require('./features/messenger/messenger.routes'))
+app.use('/api/v1/messenger', messengerRouter)
 
 app.get('/', (req, res) => {
   res.send('Hello World')

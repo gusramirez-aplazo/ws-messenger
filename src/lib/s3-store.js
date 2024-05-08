@@ -1,19 +1,28 @@
-const {
+import {
   DeleteObjectCommand,
   GetObjectCommand,
   HeadObjectCommand,
   PutObjectCommand,
-} = require('@aws-sdk/client-s3')
-const { AwsS3Store } = require('wwebjs-aws-s3')
+  S3Client,
+} from '@aws-sdk/client-s3'
+import { AwsS3Store } from 'wwebjs-aws-s3'
 
 const putObjectCommand = PutObjectCommand
 const headObjectCommand = HeadObjectCommand
 const getObjectCommand = GetObjectCommand
 const deleteObjectCommand = DeleteObjectCommand
 
+/**
+ * @type {typeof AwsS3Store | null}
+ */
 let store = null
 
-const storeFactory = (s3Client) => {
+/**
+ *
+ * @param {S3Client} s3Client
+ * @returns {typeof AwsS3Store}
+ */
+export const storeFactory = (s3Client) => {
   if (!store) {
     store = new AwsS3Store({
       bucketName: 'my-media',
@@ -28,5 +37,3 @@ const storeFactory = (s3Client) => {
 
   return store
 }
-
-module.exports = { storeFactory }

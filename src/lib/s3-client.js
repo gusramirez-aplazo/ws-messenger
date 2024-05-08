@@ -1,9 +1,16 @@
-const { S3Client } = require('@aws-sdk/client-s3')
-const { cloudFlareUrl, s3AccessKeyId, s3SecretAccessKey } = require('../config')
+import { S3Client } from '@aws-sdk/client-s3'
+import {
+  cloudFlareUrl,
+  s3AccessKeyId,
+  s3SecretAccessKey,
+} from '../config/index.js'
 
+/**
+ * @type {S3Client | null}
+ */
 let s3 = null
 
-const s3Factory = () => {
+export const s3Factory = () => {
   if (!s3) {
     s3 = new S3Client({
       region: 'auto',
@@ -16,5 +23,3 @@ const s3Factory = () => {
   }
   return s3
 }
-
-module.exports = { s3Factory }
