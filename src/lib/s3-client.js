@@ -1,14 +1,14 @@
-import { S3Client } from '@aws-sdk/client-s3'
+import { S3Client } from '@aws-sdk/client-s3';
 import {
   cloudFlareUrl,
   s3AccessKeyId,
   s3SecretAccessKey,
-} from '../config/index.js'
+} from '../config/index.js';
 
 /**
  * @type {S3Client | null}
  */
-let s3 = null
+let s3 = null;
 
 export const s3Factory = () => {
   if (!s3) {
@@ -19,7 +19,7 @@ export const s3Factory = () => {
         accessKeyId: s3AccessKeyId,
         secretAccessKey: s3SecretAccessKey,
       },
-    })
+    });
   }
-  return s3
-}
+  return s3;
+};

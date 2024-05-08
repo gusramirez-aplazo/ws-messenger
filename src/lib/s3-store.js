@@ -4,18 +4,18 @@ import {
   HeadObjectCommand,
   PutObjectCommand,
   S3Client,
-} from '@aws-sdk/client-s3'
-import { AwsS3Store } from 'wwebjs-aws-s3'
+} from '@aws-sdk/client-s3';
+import { AwsS3Store } from 'wwebjs-aws-s3';
 
-const putObjectCommand = PutObjectCommand
-const headObjectCommand = HeadObjectCommand
-const getObjectCommand = GetObjectCommand
-const deleteObjectCommand = DeleteObjectCommand
+const putObjectCommand = PutObjectCommand;
+const headObjectCommand = HeadObjectCommand;
+const getObjectCommand = GetObjectCommand;
+const deleteObjectCommand = DeleteObjectCommand;
 
 /**
  * @type {typeof AwsS3Store | null}
  */
-let store = null
+let store = null;
 
 /**
  *
@@ -32,8 +32,8 @@ export const storeFactory = (s3Client) => {
       headObjectCommand,
       getObjectCommand,
       deleteObjectCommand,
-    })
+    });
   }
 
-  return store
-}
+  return store;
+};

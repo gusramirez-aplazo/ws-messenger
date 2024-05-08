@@ -1,11 +1,11 @@
-import qrterminal from 'qrcode-terminal'
-import wsPckg from 'whatsapp-web.js'
-import { AwsS3Store } from 'wwebjs-aws-s3'
+import qrterminal from 'qrcode-terminal';
+import wsPckg from 'whatsapp-web.js';
+import { AwsS3Store } from 'wwebjs-aws-s3';
 
 /**
  * @type {wsPckg.Client | null}
  */
-let wsClient = null
+let wsClient = null;
 
 /**
  *
@@ -29,22 +29,22 @@ export const wsClientFactory = (store) => {
         remotePath:
           'https://raw.githubusercontent.com/wppconnect-team/wa-version/main/html/2.2412.54.html',
       },
-    })
+    });
     wsClient.once('ready', () => {
-      console.log('Client is ready!')
-    })
+      console.log('Client is ready!');
+    });
 
     wsClient.on('qr', (qr) => {
-      console.log('QR code received:')
-      qrterminal.generate(qr, { small: true })
-    })
+      console.log('QR code received:');
+      qrterminal.generate(qr, { small: true });
+    });
 
     wsClient.on('remote_session_saved', () => {
-      console.log('Session saved!')
-    })
+      console.log('Session saved!');
+    });
 
-    wsClient.initialize()
+    wsClient.initialize();
   }
 
-  return wsClient
-}
+  return wsClient;
+};
