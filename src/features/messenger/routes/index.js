@@ -66,8 +66,6 @@ messengerRouter.post('/misa', phoneValidator, async (req, res) => {
       caption: misaMapsUrl,
     });
 
-    console.log({ result });
-
     return res.json({
       result: result.id.id,
       ok: true,
