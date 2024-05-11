@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.0.0...v1.0.1) (2024-05-11)
+
+
+### Bug Fixes
+
+* fix releasing workflow ([5e5f39e](https://github.com/gusramirez-aplazo/ws-messenger/commit/5e5f39ee922b05435bee9f8b41491b9122edd101))
+
 ## 1.0.0 (2024-05-11)
 
 
