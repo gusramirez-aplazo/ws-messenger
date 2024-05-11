@@ -1,10 +1,10 @@
-name: releaseing ws-messenger
+name: releasing ws-messenger
 run-name: ${{ github.actor }} is triggering a release
 
 on:
   push:
     tags:
-      - v*
+      - '-v*'
 
 permissions:
   contents: read # for checkout
