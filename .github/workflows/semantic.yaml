@@ -86,7 +86,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Deploy to Digital Ocean droplet via SSH action
+      - name: Checkout main
+        uses: actions/checkout@v2
+
+      - name: Deploy to Digital Ocean
         uses: appleboy/ssh-action@v0.1.3
         with:
           host: ${{ secrets.DROPLET_HOST }}
