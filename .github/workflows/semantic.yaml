@@ -81,8 +81,7 @@ jobs:
         run: make push
 
   deploy:
-    needs: build_and_push
-
+    needs: [build_and_push]
     runs-on: ubuntu-latest
 
     steps:
