@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.0.1...v1.0.2) (2024-05-11)
+
+
+### Bug Fixes
+
+* redo actions workflow ([e1d4a25](https://github.com/gusramirez-aplazo/ws-messenger/commit/e1d4a25d63b1afb85c23e166bf1ae0398a5b8ba8))
+
 ## [1.0.1](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.0.0...v1.0.1) (2024-05-11)
 
 
