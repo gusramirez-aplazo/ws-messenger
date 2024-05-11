@@ -1,5 +1,5 @@
 export default {
-  branches: [{ name: 'master', channel: 'latest' }],
+  branches: [{ name: 'main', channel: 'latest' }],
   repositoryUrl: 'https://github.com/gusramirez-aplazo/ws-messenger.git',
   preset: 'conventionalcommits',
   presetConfig: {
