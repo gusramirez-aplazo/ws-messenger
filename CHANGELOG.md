@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.0.2...v1.0.3) (2024-05-11)
+
+
+### Bug Fixes
+
+* not update sha ([d6eed41](https://github.com/gusramirez-aplazo/ws-messenger/commit/d6eed4173908e350167efac913955c5ed4789121))
+
 ## [1.0.2](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.0.1...v1.0.2) (2024-05-11)
 
 
