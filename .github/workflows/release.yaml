@@ -1,9 +1,10 @@
-name: whatsapp-messenger
+name: releaseing ws-messenger
+run-name: ${{ github.actor }} is triggering a release
 
 on:
   push:
     tags:
-      - release-*
+      - v*
 
 env:
   REGISTRY: ${{ secrets.REGISTRY }}
