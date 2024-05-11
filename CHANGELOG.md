@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.0.6...v1.0.7) (2024-05-11)
+
+
+### Bug Fixes
+
+* try one step behind ([66cec0e](https://github.com/gusramirez-aplazo/ws-messenger/commit/66cec0ee5ab33ed197c81c5f052ef7c9809f556a))
+
 ## [1.0.6](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.0.5...v1.0.6) (2024-05-11)
 
 
