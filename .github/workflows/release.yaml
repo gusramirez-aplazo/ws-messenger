@@ -1,6 +1,7 @@
 name: releaseing ws-messenger
 run-name: ${{ github.actor }} is triggering a release
-
+permissions:
+  contents: write
 on:
   push:
     tags:
