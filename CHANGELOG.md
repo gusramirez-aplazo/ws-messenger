@@ -1,3 +1,10 @@
+## [1.0.10](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.0.9...v1.0.10) (2024-05-11)
+
+
+### Bug Fixes
+
+* env variables to deploy ([b82829e](https://github.com/gusramirez-aplazo/ws-messenger/commit/b82829e7846fef79335f361dfbd40011bd2d3bb5))
+
 ## [1.0.9](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.0.8...v1.0.9) (2024-05-11)
 
 
