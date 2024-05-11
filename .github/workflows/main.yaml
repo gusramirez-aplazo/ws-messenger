@@ -1,0 +1,41 @@
+name: whatsapp-messenger
+
+on:
+  push:
+    tags:
+      - release-*
+
+env:
+  DROPLET_NAME: ${{ secrets.DROPLET_NAME }}
+  REGISTRY: 'registry.digitalocean.com/gus'
+  IMAGE_NAME: 'messenger'
+  EXPOSED_PORT: ${{ secrets.EXPOSED_PORT }}
+  CONTAINER_PORT: ${{ secrets.CONTAINER_PORT }}
+
+jobs:
+  build_and_push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v2
+
+      - name: Update SHA
+        run: echo $GITHUB_SHA > $GITHUB_WORKSPACE/site/_meta
+
+      - name: Build container image
+        run: make build
+
+      - name: Install doctl
+        uses: digitalocean/action-doctl@v2
+        with:
+          token: ${{ secrets.CONTAINER_REGISTRY_TOKEN }}
+
+      - name: Log in to DigitalOcean Container Registry with short-lived credentials
+        run: doctl registry login --expiry-seconds 600
+
+      - name: Remove all old images
+        run: if [ ! -z "$(doctl registry repository list | grep "$(echo $IMAGE_NAME)")" ]; then doctl registry repository delete-manifest $(echo $IMAGE_NAME) $(doctl registry repository list-tags $(echo $IMAGE_NAME) | grep -o "sha.*") --force; else echo "No repository"; fi
+
+      - name: Push image to DigitalOcean Container Registry
+        run: make push

@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "start": "node src/index.js",
     "dev": "node --trace-warnings --env-file .env --watch src src/index.js",
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
@@ -20,7 +21,7 @@
     "express": "^4.19.2",
     "express-rate-limit": "^7.2.0",
     "express-validator": "^7.0.1",
-    "puppeteer": "^10.4.0",
+    "puppeteer": "^13.5.0",
     "qrcode-terminal": "0.12.0",
     "whatsapp-web.js": "^1.23.0",
     "wwebjs-aws-s3": "^1.0.2"
