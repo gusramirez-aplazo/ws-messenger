@@ -4,7 +4,6 @@ else
 	port := 8080
 endif
 
-
 ifdef CLOUDFLARE_R2_URL
 	cloudflareR2Url := $(CLOUDFLARE_R2_URL)
 else
