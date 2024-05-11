@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   branches: [{ name: 'master', channel: 'latest' }],
   repositoryUrl: 'https://github.com/gusramirez-aplazo/ws-messenger.git',
   preset: 'conventionalcommits',
