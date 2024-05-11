@@ -1,6 +1,7 @@
 name: tagging my-ws-messenger
 run-name: ${{ github.actor }} is tagging a PR/Push
-
+permissions:
+  contents: write
 on:
   push:
     branches:
