@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.0.7...v1.0.8) (2024-05-11)
+
+
+### Bug Fixes
+
+* debug ([06555fc](https://github.com/gusramirez-aplazo/ws-messenger/commit/06555fccc4d1c1c5948681a27c3988c8154cbe5b))
+
 ## [1.0.7](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.0.6...v1.0.7) (2024-05-11)
 
 
