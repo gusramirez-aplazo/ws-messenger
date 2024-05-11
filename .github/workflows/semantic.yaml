@@ -93,7 +93,7 @@ jobs:
           key: ${{ secrets.SSH_TOKEN }}
           debug: true
           script_stop: true
-          envs: CLOUDFLARE_R2_URL,S3_ACCESS_KEY_ID,S3_SECRET_ACCESS_KEY,MISA_MAPS_URL,IMAGE_NAME,MSGR_PORT,CONTAINER_REGISTRY_TOKEN,CONTAINER_REGISTRY_USERNAME,GITHUB_SHA
+          envs: CLOUDFLARE_R2_URL,S3_ACCESS_KEY_ID,S3_SECRET_ACCESS_KEY,REGISTRY,KIDS_WORLD_URL,MISA_MAPS_URL,IMAGE_NAME,MSGR_PORT,CONTAINER_REGISTRY_TOKEN,CONTAINER_REGISTRY_USERNAME,GITHUB_SHA
           script: |
             # Checkout main
             cd ~/projects/ws-messenger/ && git switch main && git pull
