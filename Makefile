@@ -29,6 +29,12 @@ else
 	$(error MISA_MAPS_URL is not set)
 endif
 
+ifdef KIDS_WORLD_URL
+	kidsWorldUrl := $(KIDS_WORLD_URL)
+else
+	$(error KIDS_WORLD_URL is not set)
+endif
+
 ifdef REGISTRY
 	registry := $(REGISTRY)
 else
@@ -47,6 +53,18 @@ else
 	commitSha := $(shell git rev-parse HEAD | head -c 7)
 endif
 
+ifdef CONTAINER_REGISTRY_USERNAME
+	containerRegistryUsername := $(CONTAINER_REGISTRY_USERNAME)
+else
+	$(error CONTAINER_REGISTRY_USERNAME is not set)
+endif
+
+ifdef CONTAINER_REGISTRY_TOKEN
+	containerRegistryToken := $(CONTAINER_REGISTRY_TOKEN)
+else
+	$(error CONTAINER_REGISTRY_TOKEN is not set)
+endif
+
 .PHONY build:
 build:
 	@echo "Building whatsapp messenger..."
@@ -60,6 +78,21 @@ push:
 	@echo "Pushing whatsapp messenger..."
 	@docker push $(registry)/$(imageName):$(commitSha)
 
+.PHONY login:
+login:
+	@echo "Logging in to container registry..."
+	@docker login -u $(containerRegistryUsername) -p $(containerRegistryToken) registry.digitalocean.com
+
+.PHONY stop:
+stop:
+	@echo "Stopping messenger app ..."
+	@docker stop $(imageName)
+
+.PHONY remove:
+remove:
+	@echo "Removing messenger app ..."
+	@docker rm $(imageName)
+
 .PHONY run:
 run:
 	@echo "Starting messenger app ..."
@@ -70,7 +103,8 @@ run:
 		-e S3_ACCESS_KEY_ID=$(s3AccessKey) \
 		-e S3_SECRET_ACCESS_KEY=$(s3SecretKey) \
 		-e MISA_MAPS_URL=$(mapsMisaUrl) \
-		--name messenger \
+		-e KIDS_WORLD_URL=$(kidsWorldUrl) \
+		--name $(imageName) \
 		--cap-add=SYS_ADMIN \
 		--restart unless-stopped \
 		$(registry)/$(imageName):$(commitSha)
