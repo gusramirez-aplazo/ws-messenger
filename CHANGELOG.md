@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.0.5...v1.0.6) (2024-05-11)
+
+
+### Bug Fixes
+
+* deploy scripts ([03760a4](https://github.com/gusramirez-aplazo/ws-messenger/commit/03760a4d34ea1b95ba82bffff2c38db74cbe6554))
+
 ## [1.0.5](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.0.4...v1.0.5) (2024-05-11)
 
 
