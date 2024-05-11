@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.0.8...v1.0.9) (2024-05-11)
+
+
+### Bug Fixes
+
+* change checkout strategy ([118dd6e](https://github.com/gusramirez-aplazo/ws-messenger/commit/118dd6ef22f1ed5d347eca7d3fac5507227ce0bd))
+
 ## [1.0.8](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.0.7...v1.0.8) (2024-05-11)
 
 
