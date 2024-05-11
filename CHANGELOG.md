@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.0.3...v1.0.4) (2024-05-11)
+
+
+### Bug Fixes
+
+* tokens ([8e4e3c9](https://github.com/gusramirez-aplazo/ws-messenger/commit/8e4e3c978f53d7a37ad752162a5d329cc96ccaf0))
+
 ## [1.0.3](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.0.2...v1.0.3) (2024-05-11)
 
 
