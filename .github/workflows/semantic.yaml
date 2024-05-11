@@ -1,7 +1,5 @@
 name: tagging my-ws-messenger
 run-name: ${{ github.actor }} is tagging a PR/Push
-permissions:
-  contents: write
 on:
   push:
     branches:
@@ -9,10 +7,18 @@ on:
     tags-ignore:
       - 'v*'
 
+permissions:
+  contents: read # for checkout
+
 jobs:
   tagging:
     name: tagging
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+      id-token: write # to enable use of OIDC for npm provenance
     steps:
       - name: Checkout
         uses: actions/checkout@v3
