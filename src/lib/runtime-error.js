@@ -1,5 +1,5 @@
 export class RuntimeMsgrError extends Error {
-  constructor(message, code, origin?) {
+  constructor(message, code, origin) {
     super(message);
     this.code = code;
     this.origin = origin;
