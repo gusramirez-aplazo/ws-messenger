@@ -23,3 +23,9 @@ export const s3Factory = () => {
   }
   return s3;
 };
+
+export const cleanS3 = () => {
+  s3?.destroy();
+
+  s3 = null;
+};
