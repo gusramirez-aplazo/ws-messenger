@@ -49,7 +49,7 @@ endif
 ifdef GITHUB_SHA
 	commitSha := $(shell echo ${GITHUB_SHA} | head -c 7)
 else
-	commitSha := $(shell git rev-parse HEAD | head -c 7)
+	commitSha := $(shell git rev-parse --short HEAD)
 endif
 
 ifdef CONTAINER_REGISTRY_USERNAME
@@ -95,7 +95,7 @@ remove:
 .PHONY run:
 run:
 	@echo "Starting messenger app ..."
-	@docker run -it \
+	@docker run -it -d \
 		-p 8000:$(port) \
 		-e PORT=$(port) \
 		-e CLOUDFLARE_R2_URL=$(cloudflareR2Url) \

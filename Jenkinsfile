@@ -8,7 +8,7 @@ pipeline {
     stage('Prepare') {
       steps {
         echo 'Preparing..'
-        sh 'npm install'
+        sh 'npm ci && npx semantic-release'
       }
     }
   }
