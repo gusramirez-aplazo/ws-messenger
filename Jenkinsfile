@@ -17,7 +17,6 @@ pipeline {
         withEnv(["CONTAINER_REGISTRY_TOKEN=${CONTAINER_REGISTRY_TOKEN}"]){
           echo 'Checking out code...'
           checkout scm
-          sh 'git pull'
 
           echo 'Doctl login...'
           sh 'doctl auth init -t $CONTAINER_REGISTRY_TOKEN'
