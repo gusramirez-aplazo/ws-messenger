@@ -1,3 +1,22 @@
+## [1.1.0](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.0.10...v1.1.0) (2024-05-21)
+
+
+### Features
+
+* add runtime error ([a39f269](https://github.com/gusramirez-aplazo/ws-messenger/commit/a39f269c932e81dddc253eb1c37e7016eb38dc90))
+* remove gh actions ([6d23bf2](https://github.com/gusramirez-aplazo/ws-messenger/commit/6d23bf2b1cb90980bc4e7abcbaaf693ee444c7ed))
+
+
+### Bug Fixes
+
+* runtime error ([f0ad988](https://github.com/gusramirez-aplazo/ws-messenger/commit/f0ad988bc5507891fd8d28b7badca9bb059bda91))
+
+
+### Chores
+
+* jenkinsfile ([14d239e](https://github.com/gusramirez-aplazo/ws-messenger/commit/14d239e1afa4c5d1ed26ec1fe961c2d3eb294015))
+* jenkinsfile ([15a98f8](https://github.com/gusramirez-aplazo/ws-messenger/commit/15a98f8a8a5586855aba32d6f1dcdc0abf2f211f))
+
 ## [1.0.10](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.0.9...v1.0.10) (2024-05-11)
 
 
