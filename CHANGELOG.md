@@ -1,3 +1,10 @@
+## [1.3.0](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.2.0...v1.3.0) (2024-05-21)
+
+
+### Features
+
+* no pull ([b9b7d66](https://github.com/gusramirez-aplazo/ws-messenger/commit/b9b7d66ff498fbfeffa1e79d0b7c2dc2b878e967))
+
 ## [1.2.0](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.1.0...v1.2.0) (2024-05-21)
 
 
