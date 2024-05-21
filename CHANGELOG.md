@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.1.0...v1.2.0) (2024-05-21)
+
+
+### Features
+
+* jenkins new version ([b5918e8](https://github.com/gusramirez-aplazo/ws-messenger/commit/b5918e83271d70053cf5f0bb515c11008dc2041a))
+
 ## [1.1.0](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.0.10...v1.1.0) (2024-05-21)
 
 
