@@ -1,3 +1,10 @@
+## [1.4.0](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.3.0...v1.4.0) (2024-05-22)
+
+
+### Features
+
+* ssh connnection ([17e5ab1](https://github.com/gusramirez-aplazo/ws-messenger/commit/17e5ab15025edd6794dc2abf6b746bc78fb03cdf))
+
 ## [1.3.0](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.2.0...v1.3.0) (2024-05-21)
 
 
