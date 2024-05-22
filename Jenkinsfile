@@ -44,7 +44,7 @@ pipeline {
         S3_ACCESS_KEY_ID = credentials('s3-access-key')
         S3_SECRET_ACCESS_KEY = credentials('s3-secret')
         USER_DOMAIN = credentials('user-domain')
-        SHORT_COMMIT = "${GIT_COMMIT[0..7]}"
+        SHORT_COMMIT =  sh(script: "printf \$(git rev-parse --short=7 HEAD)", returnStdout: true)
       }
       steps {
         echo 'Checking out code...'
@@ -57,8 +57,8 @@ pipeline {
     -u $CONTAINER_REGISTRY_USERNAME \
     -p $CONTAINER_REGISTRY_TOKEN \
     registry.digitalocean.com &&\
-    docker stop $IMAGE_NAME &&\
-    docker rm $IMAGE_NAME &&\
+    docker stop $IMAGE_NAME || true &&\
+    docker rm $IMAGE_NAME || true &&\
     docker run -it -d \
 		-p 8000:$MSGR_PORT \
 		-e PORT=$MSGR_PORT \
