@@ -43,6 +43,7 @@ pipeline {
         CONTAINER_REGISTRY_USERNAME = credentials('digitalocean-registry-username')
         S3_ACCESS_KEY_ID = credentials('s3-access-key')
         S3_SECRET_ACCESS_KEY = credentials('s3-secret')
+        SUDO_ASKPASS = credentials('jenkins-askpass')
         SHORT_COMMIT = "${GIT_COMMIT[0..7]}"
       }
       steps {
@@ -52,7 +53,13 @@ pipeline {
         sshagent(['ssh-digital-ocean']){
           echo 'Starting connection to server...'
           sh '''
-          ssh gus@gusramirez.dev "sudo docker login -u $CONTAINER_REGISTRY_USERNAME -p $CONTAINER_REGISTRY_TOKEN registry.digitalocean.com && sudo docker stop $IMAGE_NAME && sudo docker rm $IMAGE_NAME && docker run -it -d \
+          ssh gus@gusramirez.dev "sudo -A docker login \
+    -u $CONTAINER_REGISTRY_USERNAME \
+    -p $CONTAINER_REGISTRY_TOKEN \
+    registry.digitalocean.com &&\
+    sudo -A docker stop $IMAGE_NAME &&\
+    sudo -A docker rm $IMAGE_NAME &&\
+    sudo -A docker run -it -d \
 		-p 8000:$MSGR_PORT \
 		-e PORT=$MSGR_PORT \
 		-e CLOUDFLARE_R2_URL=$CLOUDFLARE_R2_URL \
