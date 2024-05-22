@@ -1,3 +1,10 @@
+## [1.8.0](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.7.0...v1.8.0) (2024-05-22)
+
+
+### Features
+
+* git rev parse ([51a4af3](https://github.com/gusramirez-aplazo/ws-messenger/commit/51a4af35389817b255caa0891c036d8af5d7d99e))
+
 ## [1.7.0](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.6.0...v1.7.0) (2024-05-22)
 
 
