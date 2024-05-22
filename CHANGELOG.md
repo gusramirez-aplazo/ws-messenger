@@ -1,3 +1,10 @@
+## [1.6.0](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.5.0...v1.6.0) (2024-05-22)
+
+
+### Features
+
+* askpass ([535ae6d](https://github.com/gusramirez-aplazo/ws-messenger/commit/535ae6db0143ba0a93e9d464919a4ee1eac6b122))
+
 ## [1.5.0](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.4.0...v1.5.0) (2024-05-22)
 
 
