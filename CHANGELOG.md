@@ -1,3 +1,10 @@
+## [1.5.0](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.4.0...v1.5.0) (2024-05-22)
+
+
+### Features
+
+* improve jenkins deploy ([653a54c](https://github.com/gusramirez-aplazo/ws-messenger/commit/653a54cac254ceeb29b4b9e8e04b10037d926450))
+
 ## [1.4.0](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.3.0...v1.4.0) (2024-05-22)
 
 
