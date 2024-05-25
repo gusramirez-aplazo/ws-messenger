@@ -4,7 +4,7 @@ import { Router } from 'express';
 import { rateLimit } from 'express-rate-limit';
 import { validationResult } from 'express-validator';
 import wsPckg from 'whatsapp-web.js';
-import { misaMapsUrl } from '../../../config/index.js';
+import { kidsWorldUrl, misaMapsUrl } from '../../../config/index.js';
 import { RuntimeMsgrError } from '../../../lib/runtime-error.js';
 import { s3Factory } from '../../../lib/s3-client.js';
 import { storeFactory } from '../../../lib/s3-store.js';
@@ -190,7 +190,7 @@ messengerRouter.post('/party', phoneValidator, async (req, res) => {
 
     const result = await wsClient
       .sendMessage(numberId?._serialized, media, {
-        caption: misaMapsUrl,
+        caption: kidsWorldUrl,
       })
       .catch((err) => {
         throw new RuntimeMsgrError(
