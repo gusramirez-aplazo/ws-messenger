@@ -1,3 +1,10 @@
+## [1.9.0](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.8.0...v1.9.0) (2024-05-25)
+
+
+### Features
+
+* party endpoint ([f2401e8](https://github.com/gusramirez-aplazo/ws-messenger/commit/f2401e8f881854ecb3e0aa859cf10b509f08bdc0))
+
 ## [1.8.0](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.7.0...v1.8.0) (2024-05-22)
 
 
