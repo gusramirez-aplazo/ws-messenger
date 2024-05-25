@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.9.0...v1.9.1) (2024-05-25)
+
+
+### Bug Fixes
+
+* kids world url env var ([6b5fbfe](https://github.com/gusramirez-aplazo/ws-messenger/commit/6b5fbfeedde3f83079b0616fe158cac6745418a6))
+
 ## [1.9.0](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.8.0...v1.9.0) (2024-05-25)
 
 
