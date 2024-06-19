@@ -1,3 +1,10 @@
+## [1.10.0](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.9.1...v1.10.0) (2024-06-19)
+
+
+### Features
+
+* update dependencies env variables ([b40049a](https://github.com/gusramirez-aplazo/ws-messenger/commit/b40049a578368fcb16cbf187ea406b9d5a30cced))
+
 ## [1.9.1](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.9.0...v1.9.1) (2024-05-25)
 
 
