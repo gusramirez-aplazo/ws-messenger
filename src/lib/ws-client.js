@@ -24,11 +24,7 @@ export const wsClientFactory = (store) => {
         headless: true,
         args: ['--disable-setuid-sandbox', '--unhandled-rejections=strict'],
       },
-      webVersionCache: {
-        type: 'remote',
-        remotePath:
-          'https://raw.githubusercontent.com/wppconnect-team/wa-version/main/html/2.2412.54.html',
-      },
+
     });
     wsClient.once('ready', () => {
       console.log('Client is ready!');
