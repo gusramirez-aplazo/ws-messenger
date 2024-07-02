@@ -1,6 +1,6 @@
 {
   "name": "messenger",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "description": "to integrate whatsapp messenger service",
   "main": "index.js",
   "type": "module",

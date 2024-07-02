@@ -1,3 +1,10 @@
+## [1.11.0](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.10.0...v1.11.0) (2024-07-02)
+
+
+### Features
+
+* new whatsapp web package ([b9f8186](https://github.com/gusramirez-aplazo/ws-messenger/commit/b9f81863d933a3affc4f54f1fe8cf98ac51938ec))
+
 ## [1.10.0](https://github.com/gusramirez-aplazo/ws-messenger/compare/v1.9.1...v1.10.0) (2024-06-19)
 
 
